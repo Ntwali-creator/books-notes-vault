@@ -62,6 +62,8 @@ GitHub: https://github.com/Ntwali-creator/books-and-notes-vault
 
 website: https://ntwali-creator.github.io/books-and-notes-vault/
 
+video : https://youtu.be/ut5QFXBtEC4?si=dc9mGrZQsDjeRfqn
+
 
 
 
