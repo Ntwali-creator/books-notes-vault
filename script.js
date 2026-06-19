@@ -54,14 +54,11 @@ function updateStats() {
     document.getElementById("totalPages").innerHTML = totalPages;
     document.getElementById("avgPages").innerHTML = avg;
     
-    // Show recent books (last 3 added)
-let recentHtml = "";
-let start = books.length - 3;
-if (start < 0) start = 0;
-for (let i = books.length - 1; i >= start; i--) {
-    recentHtml += "<div class='stat-card'> " + books[i].title + " by " + books[i].author + " (" + books[i].pages + " pages)</div>";
-}
-document.getElementById("recentBooks").innerHTML = recentHtml;
+    let recentHtml = "";
+    let start = books.length - 3;
+    if (start < 0) start = 0;
+    for (let i = books.length - 1; i >= start; i--) {
+        recentHtml += "<div class='stat-card'> " + books[i].title + " by " + books[i].author + " (" + books[i].pages + " pages)</div>";
     }
     document.getElementById("recentBooks").innerHTML = recentHtml;
     
@@ -73,7 +70,7 @@ document.getElementById("recentBooks").innerHTML = recentHtml;
     
     let msg = document.getElementById("goalMessage");
     if (totalPages >= goal) {
-        msg.innerHTML = " Goal achieved!";
+        msg.innerHTML = "Goal achieved!";
     } else {
         msg.innerHTML = (goal - totalPages) + " pages left";
     }
